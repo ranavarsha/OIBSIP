@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f5f5f5;
+	color: #000000;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form {
+	flex-basis: 400px;
+	padding: 20px;
+	background-color: #000000;
+	border-radius: 10px;
+	margin-right: 20px;
+	color: #f5f5f5;
+}
+
+.form h2 {
+	margin-bottom: 10px;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.form input,
+.form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.form input:focus,
+.form textarea:focus {
+	outline: none;
+}
+
+.form button {
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #2ecc71;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.form button:hover {
+	background-color: #27ae60;
+}
+
+.tasks {
+	flex-basis: 400px;
+	padding: 20px;
+	background-color: #000000;
+	border-radius: 10px;
+	color: #f5f5f5;
+}
+
+.tasks h2 {
+	margin-bottom: 10px;
+}
+
+.tasks ul {
+	list-style: none;
+	padding: 0;
+}
+
+.tasks li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #393838;
+	border-radius: 5px;
+}
+
+.tasks li span {
+	flex: 1;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.tasks li button {
+	background-color: #911b0e;
+	color: #FFFFFF;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.tasks li button:hover {
+	background-color: #a42113;
+}
+
+/* color scheme */
+body {
+	color: #f5f5f5;
+	background-color: #000000;
+}
+
+.form {
+	background-color: #051023;
+}
+
+.tasks {
+	background-color: #048987;
+}
+
+.form button {
+	background-color: #048987;
+}
+
+.form button:hover {
+	background-color: #048987;
+}
+
+.tasks li {
+	background-color: #03101c;
+}
+
+.tasks li button {
+	background-color: #a12113;
+}
+
+.tasks li button:hover {
+	background-color: #b71c0b;
+}
+
+.tasks li.done {
+	background-color: #048987;
+	color: #f5f5f5;
+	text-decoration: line-through;
+}
