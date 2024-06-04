@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>TacoBell Signup</title>
+</head>
+<body>
+  <header id="signup-section">
+    <div class="containers">
+      <div class="logo">
+
+      </div>
+      <div class="btn">
+        <a href="#login-section" id="login">Login</a>
+        <a href="#signup-section" id="register">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SIGNUP -->
+
+  <div class="container">
+    <div class="left-section">
+      <h1 class="reg-text">Register with us</h1>
+      <img src="./register.jpg" alt="Welcome Image" id="welcome-image">
+      <p>If you are an already existing user, please <a id="login-link" href="#login-section">login</a></p>
+      
+      <!-- <button>Contact Us</button> -->
+
+      <a href="https://wa.me/+2347033731203" target="_blank"><button>Contact Us</button></a>
+    </div>
+    <div class="right-section">
+
+      <!-- Sign Up Form -->
+
+      <div id="loginContainer">
+
+        <h2>Sign Up Page</h2>
+        <input type="email" id="signup-email" name="email" placeholder="Enter your Email Address" required>
+        <input type="password" id="signup-password" name="password" placeholder="Enter new Password" required>
+        <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+        <br>
+
+        <button onclick="signUp(event)">Sign Up</button>
+
+        <div id="success-message"></div>
+
+        <div id="error-message"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGIN PAGE -->
+
+  <header>
+    <div class="containers">
+
+      <div class="logo">
+        <a href="#signup-section">
+        </a>
+      </div>
+      <div class="btn">
+        <a href="#login-section" id="login">Login</a>
+        <a href="#signup-section" id="register">Register</a>
+      </div>
+    </div>
+  </header>
+
+   <!--end of login header-->
+
+  <div class="container" id="login-section">
+    <div class="left-section">
+
+      <h1 class="reg-text wel-text">Welcome to TacoBell!</h1>
+      <img src="./register.jpg" alt="Welcome Image" id="welcome-image">
+      <p style="padding-bottom: 1em;">If you are an already existing user please enter your login details.</p>
+      <p>If you are a new user please click register to <a id="login-link" href="#signup-section">sign up</a></p>
+      <a href="https://wa.me/+2347033731203" target="_blank"><button>Contact Us</button></a>
+    </div> 
+    
+    <!--end of left secton-->
+
+    <div class="right-section">
+
+      <div id="loginContainer">
+
+        <h2>Login Page</h2>
+        <br>
+        <input type="email" id="login-email" name="email" placeholder="Enter your Email Address" required>
+
+        <input type="password" id="login-password" name="password" placeholder="Enter new Password" required>
+
+        <a class="forget-pass" onclick="displaySuccessMail()">Forgotten Password?</a>
+        <br>
+        <button id="submitbtn" onclick="logIn(event)">Login</button>
+        <div id="success-text"></div>
+        <div id="error-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
